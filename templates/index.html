@@ -10,13 +10,13 @@
       href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
     />
   </head>
-  <body>
+  <body style="background-color:dimgray; color:cornsilk">
     <div class="container">
       <!-- Add Jumbotron to Header -->
-      <div class="jumbotron text-center">
+      <div class="jumbotron text-center" style="color:orange; background-color: darkslategrey;">
         <h1>Mission to Mars</h1>
         <!-- Add a button to activate scraping script -->
-        <p><a class="btn btn-info btn-lg" href="/scrape" role="button">Scrape New Data</a></p>
+        <p><a class="btn btn-danger btn-lg" href="/scrape" role="button">Scrape New Data</a></p>
       </div>
 
       <!-- Add section for Mars News -->
@@ -47,11 +47,11 @@
 
         <div class="col-md-4">
           <!-- Mars Facts -->
-          <div class="row" id="mars-facts">
+          <div class="row" id="mars-facts" >
             <h4>Mars Facts</h4>
-            <table class="table table-dark">
-              {{ mars.facts | safe }}
-            </table>
+            <div style="color:bisque; background-color:chocolate;">
+            {{ mars.facts | safe }}
+            </div>
           </div>
         </div>
       </div>
